@@ -2,19 +2,6 @@
 
 Project: Minecraft Inspired Survive the Night (activity, conditionals)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 The **Foundations** path ends with two individual components: a _final examination_ and a _Learning by Crafting_ activity. 
 
 The _final exam_ will be similar in style and structure to the midterm exam. The exam is take home, open note, and untimed. It will be given as a Moodle quiz, and will open on the evening of Monday, December 14th, 2026. The exam period will close on **Tuesday, December 22, 2026, at 3:00 p.m.** 
