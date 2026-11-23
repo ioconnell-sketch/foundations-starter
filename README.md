@@ -1,6 +1,7 @@
-# CSC110 Final Activities | Foundations Path
-
 Project: Minecraft Inspired Survive the Night (activity, conditionals)
+
+
+# CSC110 Final Activities | Foundations Path
 
 The **Foundations** path ends with two individual components: a _final examination_ and a _Learning by Crafting_ activity. 
 
