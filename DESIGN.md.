@@ -1,0 +1,71 @@
+Learning by Crafting: Design
+
+Issy O’Connell
+
+Topic Choices
+
+Homework topic: Lists (with loops).
+
+I am choosing to center the homework assignment on lists, since I have found it hard to remove items from a list while looping over it.
+
+In-class topic: Conditionals.
+
+I thought that conditionals would be a good skill to practice since they are easy to misread.
+
+The central theme of the project is inspired by Minecraft. Students can win with certain inputs that lead to a win condition by surviving the night.
+
+Homework: Let’s Mine Ore
+
+The starter code provides students with the game loop, and the code ensures that the seeded cave will always be winnable. When editing this code, there will be areas for students to write the item functions that allow the game to run. Once the student has written four correct functions, the game will print “You win!! Game over…” and the game will conclude.
+
+Top Learning Objectives
+
+* Write functions that add, count, and remove items from a list.
+* Debug a loop that skips items when removing from a list.
+* Trace how the inventory loses and gains items as the game loop runs.
+
+Let’s Mine Ore: Subtasks (about 20-30 lines of student code in total)
+
+* Task 1: add_item(inventory, item, count): append the item count times. An example could be adding 4 “coal”, which gives ["coal", "coal", "coal", "coal"].
+* Task 2: count_item(inventory, item): return how many times the item appears, using a loop (or .count()).
+* Task 3: can_craft(inventory, recipe): return whether the inventory has all the necessary ingredients. For example, a torch recipe would be ["stick", "stick", "coal"] and needs two sticks and one coal.
+* Task 4: craft(inventory, recipe, result): remove the items used to craft the new item and add the new item to the inventory.  Students can modify the list in place or build a new list.
+
+Draft plan
+
+Extension idea: I want to create all the dessert recipes from Minecraft to be possible to craft.
+
+Activity: Survive the Night
+
+Code only. This game should take about 20-25 minutes in pairs. First, students open survive.py, which will have a purposely buggy function, plus a few prompts to direct their gameplay.
+
+def choose_action(health, is_dark, has_sword):
+    action = "run"
+    if is_dark:
+        action = "build shelter"
+    if health < 5:
+        action = "eat bread"
+    elif has_sword:
+        action = "fight"
+    return action
+
+Learning Challenge
+
+* A: Students believe that every condition that is true will run, so they miss that a later if can overwrite an earlier result, and that elif is skipped once an earlier branch has matched.
+* B: Students read and/or like regular English, so they think is_dark and has_sword is true if either one is true.
+
+Prompts and Standards: How to Play the Game
+
+Step 1: First, both players predict what the function returns. The call will look like choose_action(3, True, True). The player with the correct prediction wins that turn and gains a point. A wrong prediction shows the instructor that the student holds challenge A.
+
+Step 2: Explain the outcome of the round. In a #comment, each pair writes which lines ran and why that result was returned.
+
+Step 3: Correction. Students write a single if/elif/else chain, then reorder the branches so darkness wins, and rerun the five calls. After students see how the result of the game changes as the structure changes, they make sure their adjustment runs smoothly by troubleshooting if needed. This step addresses challenge A.
+
+Step 4: See what happens when a condition is changed to is_dark and has_sword, then is_dark or has_sword, and write a #comment about how the change influenced the game. This step surfaces challenge B.
+
+Step 5: Win the game. check_survival() prints “You survived until dawn!” only if every call returns the expected action with no errors.
+
+Evidence of Learning
+
+An accurate explanation names the specific lines and says the last assignment, or the first matching elif, decides the result. A common mistake could be saying “it does both” or “it picks whichever is true.
